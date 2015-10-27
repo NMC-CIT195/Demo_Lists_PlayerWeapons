@@ -19,17 +19,11 @@ namespace Demo_Lists_PlayerWeapons
         #region FIELDS
 
         // TODO 02b add a field/property of list type to hold the player's weapons
-        private List<Weapon> _weapons;     
 
         #endregion
 
         #region PROPERTIES
         
-        public List<Weapon> Weapons
-        {
-            get { return _weapons; }
-            set { _weapons = value; }
-        }
 
         #endregion
 
@@ -43,8 +37,8 @@ namespace Demo_Lists_PlayerWeapons
             string name)
             : base(name)
         {
+            // TODO 02c instantiate the weapons list in the player constructor
 
-            _weapons = new List<Weapon>();
         }
 
         #endregion

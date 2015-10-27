@@ -43,7 +43,7 @@ namespace Demo_Lists_PlayerWeapons
             string name)
             : base(name)
         {
-
+            // TODO 02c instantiate the weapons list in the player constructor
             _weapons = new List<Weapon>();
         }
 

@@ -133,16 +133,16 @@ namespace Demo_Lists_PlayerWeapons
             int weaponIndex = -1;
 
             // cycle through the weapon list until the weapon name matches and get the index of the weapon
-            //foreach (var weapon in myPlayer.Weapons)
-            //{
-            //    if (weapon.Name == weaponName)
-            //    {
-            //        weaponIndex = myPlayer.Weapons.IndexOf(weapon);
-            //    }
-            //}
+            foreach (var weapon in myPlayer.Weapons)
+            {
+                if (weapon.Name == weaponName)
+                {
+                    weaponIndex = myPlayer.Weapons.IndexOf(weapon);
+                }
+            }
 
             // use lambda operator
-            weaponIndex = myPlayer.Weapons.FindIndex(c => c.Name == weaponName);
+            // weaponIndex = myPlayer.Weapons.FindIndex(c => c.Name == weaponName);
 
             Console.WriteLine("Remove the weapon with index = " + weaponIndex);
             Console.WriteLine("Press the Enter key to continue.");

@@ -40,7 +40,7 @@ namespace Demo_Lists_PlayerWeapons
         }
 
         /// <summary>
-        /// instantiate a character and set intial properties
+        /// instantiate a character and set initial properties
         /// </summary>
         /// <param name="name">character name</param>
         public Character(string name)

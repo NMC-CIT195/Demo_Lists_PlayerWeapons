@@ -57,20 +57,9 @@ namespace Demo_Lists_PlayerWeapons
         public static void InitializePlayerWeapons(Player myPlayer)
         {
             // TODO 04b add a weapon by first instantiating one
-            Weapon submachineGun = new Weapon();
-            submachineGun.Type = Weapon.WeaponType.gun;
-            submachineGun.Name = "Thompson Submachine Gun";
-            submachineGun.Description = "Fast firing submachine gun with a 50 shell mag";
-            myPlayer.Weapons.Add(submachineGun);
 
             // TODO 04c add a weapon using a list initializer
-            myPlayer.Weapons.Add(
-                new Weapon
-                {
-                    Type = Weapon.WeaponType.knife,
-                    Name = "Bowie Knife",
-                    Description = "Really big knife"
-                });
+
         }
 
         // TODO 05a add a method to display the player's weapons list
@@ -106,7 +95,7 @@ namespace Demo_Lists_PlayerWeapons
         /// <param name="weapon"></param>
         public static void AddWeaponToPlayer(Player myPlayer, Weapon weapon)
         {
-            myPlayer.Weapons.Add(weapon);
+
         }
 
         // TODO 07a add a method to remove a weapon to the player's weapons list
@@ -120,22 +109,15 @@ namespace Demo_Lists_PlayerWeapons
             // set default value to -1 to indicate that the weapon was not found in the list
             int weaponIndex = -1;
 
-            // cycle through the weapon list until the weapon name matches and get the index of the weapon
-            //foreach (var weapon in myPlayer.Weapons)
-            //{
-            //    if (weapon.Name == weaponName)
-            //    {
-            //        weaponIndex = myPlayer.Weapons.IndexOf(weapon);
-            //    }
-            //}
+
 
             // use lambda operator
-            weaponIndex = myPlayer.Weapons.FindIndex(c => c.Name == weaponName);
+            // weaponIndex = myPlayer.Weapons.FindIndex(c => c.Name == weaponName);
 
             Console.WriteLine("Remove the weapon with index = " + weaponIndex);
             Console.WriteLine("Press the Enter key to continue.");
 
-            myPlayer.Weapons.RemoveAt(weaponIndex);
+            //myPlayer.Weapons.RemoveAt(weaponIndex);
         }
     }
 }
