@@ -11,10 +11,10 @@ namespace Demo_Lists_PlayerWeapons
         static void Main(string[] args)
         {
             // TODO 00a instantiate a player
-            Player myPlayer = new Player("Bonzo");
+
 
             // TODO 03b call the method to demonstrate weapons list management
-            DemoWeaponManagement(myPlayer);
+
 
         }
 
@@ -26,35 +26,23 @@ namespace Demo_Lists_PlayerWeapons
         public static void DemoWeaponManagement(Player myPlayer)
         {
             // TODO 04d call the method to initialize the player's weapons list
-            InitializePlayerWeapons(myPlayer);
+
 
             // TODO 05b call the method to display the player's weapons list
-            DisplayPlayersWeapons(myPlayer);
+
 
             // TODO 06b create a new weapon and add it to the player's weapons list
             // create and add a new laser weapon
-            Console.WriteLine("We will now add a new weapon.");
-            Console.WriteLine("Press the Enter key to continue.");
-            Weapon laser = new Weapon
-            {
-                Type = Weapon.WeaponType.laser,
-                Name = "Laser L04",
-                Description = "Hand-held laser for melee type of fighting"
-            };
-            AddWeaponToPlayer(myPlayer, laser);
-            Console.ReadLine();
 
             // TODO 06c display the player's weapons list
-            DisplayPlayersWeapons(myPlayer);
+
 
             // TODO 07b choose and remove a weapon to the player's weapons list
             // remove a weapon
-            Console.WriteLine("We will now remove a weapon.");
-            RemoveWeaponFromPlayer(myPlayer, "Laser L04");
-            Console.ReadLine();
+
 
             // TODO 07c display the player's weapons list
-            DisplayPlayersWeapons(myPlayer);
+
 
             Console.WriteLine("Press the Enter key to continue.");
             Console.ReadLine();
