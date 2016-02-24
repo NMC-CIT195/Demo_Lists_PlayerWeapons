@@ -11,7 +11,7 @@ namespace Demo_Lists_PlayerWeapons
         static void Main(string[] args)
         {
             // TODO 00a instantiate a player
-            Player myPlayer = new Player("Bonzo");
+            Player myPlayer = new Player("Billy the Blaster");
 
             // TODO 03b call the method to demonstrate weapons list management
             DemoWeaponManagement(myPlayer);
